@@ -18,7 +18,6 @@ library(multinma)
 library(tidyverse)
 library(knitr)
 library(latex2exp)
-library(DT)
 ```
 
 ```{r}
@@ -213,7 +212,7 @@ g  +
   stat_function(fun = post5, aes(color = "UST")) +
   scale_color_manual(values = c("turquoise", "slateblue"),
                      labels = c("1 = IXE_Q2W", "2 = UST")) +
-  labs(color = "Treatment")
+  labs(color = "Treatment", title = "Age < 50")
 ```
 
 ```{r}
@@ -223,7 +222,7 @@ g  +
   stat_function(fun = post6, aes(color = "UST")) +
   scale_color_manual(values = c("turquoise", "slateblue"),
                      labels = c("1 = IXE_Q2W", "2 = UST")) +
-  labs(color = "Treatment")
+  labs(color = "Treatment", title = "Age >= 50")
 ```
 
 ```{r}
